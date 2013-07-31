@@ -49,6 +49,11 @@ Pod::Spec.new do |s|
     googlereader.dependency 'ShareKit/Core'
   end
 
+  s.subspec 'GooglePlus' do |googleplus|
+    googleplus.source_files = 'Classes/ShareKit/Sharers/Services/Google Plus/**/*.{h,m}'
+    googleplus.dependency 'ShareKit/Core'
+  end
+
   s.subspec 'Instapaper' do |instapaper|
     instapaper.source_files = 'Classes/ShareKit/Sharers/Services/Instapaper/**/*.{h,m}'
     instapaper.dependency 'ShareKit/Core'
